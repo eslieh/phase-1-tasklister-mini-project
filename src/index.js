@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     edit.onclick = () =>{
       // prompts an elert to the user to modify the existing task
       let newContent = prompt("Edit item", task);
-      if ( newContent !== "") {
+      if ( newContent !== "" && newContent !== null) {
           lists.textContent = newContent;
           lists.appendChild(del)
           lists.appendChild(edit)
